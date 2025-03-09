@@ -1,0 +1,68 @@
+baseurl = "https://ealdoshkin.github.io"
+title = "My Blog"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[params]
+dateform = "Jan 2, 2006"
+dateformShort = "Jan 2"
+dateformNum = "2006-01-02"
+dateformNumTime = "2006-01-02 15:04"
+
+# Subtitle for home
+homeSubtitle = "A simple and beautiful blog"
+
+# Set disableReadOtherPosts to true in order to hide the links to other posts.
+disableReadOtherPosts = false
+
+# Enable sharing buttons, if you like
+enableSharingButtons = true
+
+# Show a global language switcher in the navigation bar
+enableGlobalLanguageMenu = true
+
+# Metadata mostly used in document's head
+description = "My new homepage or blog"
+keywords = "homepage, blog"
+images = [""]
+
+[taxonomies]
+category = "blog"
+tag = "tags"
+series = "series"
+
+[languages]
+[languages.de]
+title = "Vyrn"
+contentDir = 'content/de'
+disabled = false
+languageCode = 'de-DE'
+languageDirection = 'ltr'
+languageName = 'Deutsch'
+weight = 1
+[languages.de.params]
+subtitle = 'Referenz, Tutorials und Erklärungen'
+[languages.de.logo]
+logoText = "vyrn"
+logoHomeLink = "/"
+[languages.de.params.logo]
+logoText = "vyrn"
+logoHomeLink = "/"
+[languages.en]
+contentDir = 'content/en'
+disabled = false
+languageCode = 'en-US'
+languageDirection = 'ltr'
+languageName = 'English'
+title = 'Project'
+weight = 2
+[languages.en.params]
+subtitle = 'Reference, Tutorials, and Explanations'
+
+# And you can even create generic menu
+[[menu.main]]
+identifier = "blog"
+name = "Blog"
+url = "/posts"
