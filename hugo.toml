@@ -1,8 +1,8 @@
-baseurl = "https://ealdoshkin.github.io"
-title = "My Blog"
-languageCode = "en-us"
+baseurl = "https://vyrn.ru"
+title = "vyrn"
+languageCode = "ru-ru"
 theme = "hello-friend-ng"
-defaultContentLanguage = 'en'
+defaultContentLanguage = 'ru'
 defaultContentLanguageInSubdir = true
 
 [params]
@@ -24,7 +24,7 @@ enableSharingButtons = true
 enableGlobalLanguageMenu = true
 
 # Metadata mostly used in document's head
-description = "My new homepage or blog"
+description = "Personal blog of Eugene Aldoshkin"
 keywords = "homepage, blog"
 images = [""]
 
@@ -34,35 +34,75 @@ tag = "tags"
 series = "series"
 
 [languages]
-[languages.de]
+[languages.ru]
 title = "Vyrn"
-contentDir = 'content/de'
+contentDir = 'content/ru'
 disabled = false
-languageCode = 'de-DE'
+languageCode = 'ru-RU'
 languageDirection = 'ltr'
-languageName = 'Deutsch'
+languageName = 'Русский'
 weight = 1
-[languages.de.params]
-subtitle = 'Referenz, Tutorials und Erklärungen'
-[languages.de.logo]
+[languages.ru.params]
+subtitle = 'Личный блог Евгений Алдошкина'
+[languages.ru.logo]
 logoText = "vyrn"
 logoHomeLink = "/"
-[languages.de.params.logo]
+[languages.ru.params.logo]
 logoText = "vyrn"
 logoHomeLink = "/"
+# [languages.ru.menu]
+# [[languages.ru.menu.main]]
+# identifier = "home"
+# name = "Главная"
+# url = "/"
+# weight = 1
+
+
 [languages.en]
+title = "Vyrn"
 contentDir = 'content/en'
 disabled = false
 languageCode = 'en-US'
 languageDirection = 'ltr'
 languageName = 'English'
-title = 'Project'
 weight = 2
 [languages.en.params]
-subtitle = 'Reference, Tutorials, and Explanations'
+subtitle = "Personal blog of Eugene Aldoshkin"
+[languages.en.logo]
+logoText = "vyrn"
+logoHomeLink = "/"
+[languages.en.params.logo]
+logoText = "vyrn"
+logoHomeLink = "/"
 
 # And you can even create generic menu
+[menu]
+
 [[menu.main]]
-identifier = "blog"
-name = "Blog"
+identifier = "AI"
+name = "AI"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "K8s"
+name = "K8s"
+url = "/about/"
+weight = 2
+
+[[menu.main]]
+identifier = "Golang"
+name = "Golang"
+url = "/services/"
+weight = 3
+
+[[menu.main]]
+identifier = "Linux"
+name = "Linux"
 url = "/posts"
+
+[[menu.main]]
+identifier = "About me"
+name = "About me"
+url = "/posts"
+weight = 100

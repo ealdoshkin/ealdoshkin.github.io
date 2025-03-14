@@ -1,3 +1,2 @@
-*.swp
-*.swo
-public/
+public/*
+public/en/404.html
