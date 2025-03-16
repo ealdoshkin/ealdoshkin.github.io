@@ -2,9 +2,9 @@ baseURL = "https://vyrn.ru"
 theme = "LoveIt"
 # themesDir = "../.."
 title = "Vyrn"
-defaultContentLanguage = "en"
-languageCode = "en"
-languageName = "English"
+defaultContentLanguage = "ru"
+languageCode = "ru"
+languageName = "Russian"
 
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
@@ -64,22 +64,22 @@ title = ""
 # site default theme ["auto", "light", "dark"]
 defaultTheme = "auto"
 # public git repo url only then enableGitInfo is true
-gitRepo = "https://github.com/dillonzq/LoveIt"
+# gitRepo = "https://github.com/dillonzq/LoveIt"
 # which hash function used for SRI, when empty, no SRI is used
 # ["sha256", "sha384", "sha512", "md5"]
 fingerprint = ""
 # date format
 dateFormat = "2006-01-02"
 # website title for Open Graph and Twitter Cards
-title = "LoveIt"
+title = "Vyrn"
 # website description for RSS, SEO, Open Graph and Twitter Cards
-description = "Hugo theme - LoveIt"
+description = "The gamechanger."
 # website images for Open Graph and Twitter Cards
 images = ["/logo.png"]
 
 # Author config
 [params.author]
-name = "xxxx"
+name = "Ealdoshkin"
 email = ""
 link = ""
 
@@ -94,9 +94,12 @@ mobileMode = "auto"
 # URL of the LOGO
 logo = ""
 # title name
-name = "LoveIt"
+name = "Vyrn"
 # you can add extra information before the name (HTML format is supported), such as icons
-pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+# pre = "<i class='far fa-kiss-wink-heart fa-fw' aria-hidden='true'></i>"
+pre = "<i class='fas fa-satellite fa-fw' aria-hidden='true'></i>"
+
+
 # you can add extra information after the name (HTML format is supported), such as icons
 post = ""
 # whether to use typeit animation for title name
@@ -104,7 +107,7 @@ typeit = false
 
 # Footer config
 [params.footer]
-enable = true
+enable = false
 # Custom content (HTML format is supported)
 custom = ""
 # whether to show Hugo and theme info
@@ -144,7 +147,7 @@ favicon = true
 # App icon config
 [params.app]
 # optional site title override for the app when added to an iOS home screen or Android launcher
-title = "LoveIt"
+title = "Vyrn"
 # whether to omit favicon resource links
 noFavicon = false
 # modern SVG favicon to use in place of older style .png and .ico files
@@ -188,11 +191,11 @@ enable = true
 # Gravatar Email for preferred avatar in home page
 gravatarEmail = ""
 # URL of avatar shown in home page
-avatarURL = "/images/avatar.png"
+avatarURL = "/images/ava.jpeg"
 # title shown in home page (HTML format is supported)
 title = ""
 # subtitle shown in home page (HTML format is supported)
-subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+subtitle = "The Gamechanger."
 # whether to use typeit animation for subtitle
 typeit = true
 # whether to show social links
@@ -206,12 +209,16 @@ enable = true
 paginate = 6
 # Social config in home page
 [params.social]
-GitHub = ""
+GitHub = "ealdoshkin"
+HuggingFace = "ealdoshkin"
+Telegram = "+fANSlR3l18czZDIy"
+Email = "aldoshkineg@gmail.com"
+Matrix = "@hah3sh:crossbach.de"
+RSS = true
 Linkedin = ""
 X = ""
 Instagram = ""
 Facebook = ""
-Telegram = ""
 Medium = ""
 Gitlab = ""
 Youtubelegacy = ""
@@ -228,7 +235,6 @@ Bitbucket = ""
 Stackoverflow = ""
 Weibo = ""
 Odnoklassniki = ""
-VK = ""
 Flickr = ""
 Xing = ""
 Snapchat = ""
@@ -266,7 +272,6 @@ Thingiverse = ""
 Devto = ""
 Gitea = ""
 XMPP = ""
-Matrix = ""
 Bilibili = ""
 Discord = ""
 DiscordInvite = ""
@@ -282,10 +287,7 @@ Malt = ""
 TikTok = ""
 TryHackMe = ""
 Codeberg = ""
-HuggingFace = ""
 Threads = ""
-Email = ""
-RSS = ""
 
 # Page global config
 [params.page]
@@ -362,7 +364,7 @@ Pinterest = false
 Tumblr = false
 HackerNews = true
 Reddit = false
-VK = false
+VK = true
 Buffer = false
 Xing = false
 Line = true
@@ -380,7 +382,6 @@ Diaspora = true
 Mix = false
 Telegram = true
 # Comment config
-# 评论系统设置
 [params.page.comment]
 enable = true
 # Disqus comment config (https://disqus.com/)
@@ -398,7 +399,7 @@ clientSecret = ""
 # Valine comment config (https://github.com/xCss/Valine)
 [params.page.comment.valine]
 enable = true
-appId = "QGzwQXOqs5JOhN4RGPOkR2mR-MdYXbMMI"
+appId = "kx3p0SWYxgbXKCe5qRoAGAr1-MdYXbMMI"
 appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
 placeholder = ""
 avatar = "mp"
@@ -657,11 +658,11 @@ url = "/categories/"
 title = ""
 [[languages.en.menu.main]]
 weight = 4
-identifier = "documentation"
+identifier = "wiki"
 pre = ""
 post = ""
-name = "Docs"
-url = "/categories/documentation/"
+name = "Wiki"
+url = "https://wiki.rockylinux.org/rocky/version/"
 title = ""
 [[languages.en.menu.main]]
 weight = 5
@@ -671,14 +672,14 @@ post = ""
 name = "About"
 url = "/about/"
 title = ""
-[[languages.en.menu.main]]
-weight = 6
-identifier = "github"
-pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
-post = ""
-name = ""
-url = "https://github.com/dillonzq/LoveIt"
-title = "GitHub"
+# [[languages.en.menu.main]]
+# weight = 6
+# identifier = "github"
+# pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+# post = ""
+# name = ""
+# url = "https://github.com/dillonzq/LoveIt"
+# title = "GitHub"
 [languages.en.params]
 [languages.en.params.search]
 enable = true
@@ -698,84 +699,61 @@ rss = 10
 [languages.en.params.home.profile]
 enable = true
 gravatarEmail = ""
-avatarURL = "/images/avatar.png"
+# avatarURL = "/images/ava.jpeg"
 title = ""
-subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+# subtitle = "The Gamechanger"
 typeit = true
 social = true
 disclaimer = ""
-[languages.en.params.social]
-GitHub = "xxxx"
-X = "xxxx"
-# Instagram = "xxxx"
-# Facebook = "xxxx"
-Telegram = "+fANSlR3l18czZDIy"
-Youtubelegacy = "xxxx"
-HuggingFace = "xxxx"
-Threads = "xxxx"
-Phone = "555-555-555"
-Email = "xxxx@xxxx.com"
-RSS = true
-[languages.en.params.social.Mastodon]
-id = "@xxxx"
-prefix = "https://mastodon.technology/"
 
-[languages.zh-cn]
+[languages.ru]
 weight = 2
-languageCode = "zh-CN"
-languageName = "简体中文"
+languageCode = "ru-RU"
+languageName = "Русский"
 hasCJKLanguage = true
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-[languages.zh-cn.menu]
-[[languages.zh-cn.menu.main]]
+[languages.ru.menu]
+[[languages.ru.menu.main]]
 weight = 1
 identifier = "posts"
 pre = ""
 post = ""
-name = "所有文章"
+name = "Архив"
 url = "/posts/"
 title = ""
-[[languages.zh-cn.menu.main]]
+[[languages.ru.menu.main]]
 weight = 2
 identifier = "tags"
 pre = ""
 post = ""
-name = "标签"
+name = "Тэги"
 url = "/tags/"
 title = ""
-[[languages.zh-cn.menu.main]]
+[[languages.ru.menu.main]]
 weight = 3
 identifier = "categories"
 pre = ""
 post = ""
-name = "分类"
+name = "Категории"
 url = "/categories/"
 title = ""
-[[languages.zh-cn.menu.main]]
+[[languages.ru.menu.main]]
 weight = 4
-identifier = "documentation"
+identifier = "wiki"
 pre = ""
-name = "文档"
-url = "/categories/documentation/"
+name = "Вики"
+url = "https://wiki.rockylinux.org/rocky/version/"
 title = ""
-[[languages.zh-cn.menu.main]]
+[[languages.ru.menu.main]]
 weight = 5
 identifier = "about"
 pre = ""
 post = ""
-name = "关于"
+name = "Обо мне"
 url = "/about/"
 title = ""
-[[languages.zh-cn.menu.main]]
-weight = 6
-identifier = "github"
-pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
-post = ""
-name = ""
-url = "https://github.com/dillonzq/LoveIt"
-title = "GitHub"
-[languages.zh-cn.params]
-[languages.zh-cn.params.search]
+[languages.ru.params]
+[languages.ru.params.search]
 enable = true
 type = "algolia"
 contentLength = 4000
@@ -784,29 +762,18 @@ maxResultLength = 10
 snippetLength = 50
 highlightTag = "em"
 absoluteURL = false
-[languages.zh-cn.params.search.algolia]
+[languages.ru.params.search.algolia]
 index = "index"
 appID = "GZT24PWKNT"
 searchKey = "634ab679e825b815de2663de38908f9d"
-[languages.zh-cn.params.home]
+[languages.ru.params.home]
 rss = 10
-[languages.zh-cn.params.home.profile]
+[languages.ru.params.home.profile]
 enable = true
 gravatarEmail = ""
-avatarURL = "/images/avatar.png"
+# avatarURL = "/images/avatar.png"
 title = ""
-subtitle = "一个简洁、优雅且高效的 Hugo 主题"
+# subtitle = "Меняем правила"
 typeit = true
 social = true
 disclaimer = ""
-[languages.zh-cn.params.social]
-GitHub = "xxxx"
-Weibo = "xxxx"
-Steam = "xxxx"
-Zhihu = "xxxx"
-Douban = "xxxx"
-Devto = "xxxx"
-Bilibili = "xxxx"
-Email = "xxxx@xxxx.com"
-Phone = "555-555-555"
-RSS = true
