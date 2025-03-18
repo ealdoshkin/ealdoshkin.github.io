@@ -6,17 +6,12 @@ description: "About me"
 images: ["/me.png"]
 ---
 
-<p align="center">
-  <img src="/images/me.png"/>
-</p>
-{{< social-links >}}
+![Owner](/images/me.png "Eugene Aldoshkin")
 
 <!--[![GitHub](https://img.shields.io/badge/GitHub-@ealdoshkin-181717?logo=github&style=flat-square)](https://github.com/ealdoshkin)-->
 <!--[![Matrix](https://img.shields.io/badge/Matrix-Chat-7BC9A4?logo=matrix&style=flat-square)](https://matrix.to/#/@hah3sh:crossbach.de)-->
 <!--[![Telegram](https://img.shields.io/badge/Telegram-Join-26A5E4?logo=telegram&style=flat-square)](https://t.me/+fANSlR3l18czZDIy)-->
 <!--[![Email](https://img.shields.io/badge/Email-Click%20to%20send-D14836?logo=gmail&style=flat-square)](mailto:aldoshkineg@gmail.com)-->
-
-## Eugene Aldoshkin
 
 - :(fas fa-birthday-cake fa-fw): Born in 1989
 - :(fas fa-graduation-cap fa-fw): Received a state education in computer science in 2009
@@ -31,3 +26,7 @@ images: ["/me.png"]
 - :(fas fa-cloud fa-fw): Kubernetes & Cloud Solutions
 - :(fas fa-chart-line fa-fw): Expertise in Linux Performance
 - :(fas fa-gear fa-fw): Developing in Golang
+
+{{ if not .Params.noComment }}
+Comment
+{{ end }}
