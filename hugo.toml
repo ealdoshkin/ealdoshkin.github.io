@@ -656,14 +656,14 @@ post = ""
 name = "Categories"
 url = "/categories/"
 title = ""
-[[languages.en.menu.main]]
-weight = 4
-identifier = "wiki"
-pre = ""
-post = ""
-name = "Wiki"
-url = "https://wiki.rockylinux.org/rocky/version/"
-title = ""
+# [[languages.en.menu.main]]
+# weight = 4
+# identifier = "wiki"
+# pre = ""
+# post = ""
+# name = "Wiki"
+# url = "https://wiki.rockylinux.org/rocky/version/"
+# title = ""
 [[languages.en.menu.main]]
 weight = 5
 identifier = "about"
@@ -737,13 +737,13 @@ post = ""
 name = "Категории"
 url = "/categories/"
 title = ""
-[[languages.ru.menu.main]]
-weight = 4
-identifier = "wiki"
-pre = ""
-name = "Вики"
-url = "https://wiki.rockylinux.org/rocky/version/"
-title = ""
+# [[languages.ru.menu.main]]
+# weight = 4
+# identifier = "wiki"
+# pre = ""
+# name = "Вики"
+# url = "https://wiki.rockylinux.org/rocky/version/"
+# title = ""
 [[languages.ru.menu.main]]
 weight = 5
 identifier = "about"
