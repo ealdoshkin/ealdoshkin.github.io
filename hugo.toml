@@ -400,7 +400,7 @@ clientSecret = ""
 [params.page.comment.valine]
 enable = true
 appId = "kx3p0SWYxgbXKCe5qRoAGAr1-MdYXbMMI"
-appKey = "WBmoGyJtbqUswvfLh6L8iEBr"
+appKey = "QrIti3fghg6Mo5TzekdIENCA"
 placeholder = ""
 avatar = "mp"
 meta = ""
