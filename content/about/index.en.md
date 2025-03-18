@@ -28,7 +28,3 @@ images: ["/me.png"]
 - :(fas fa-cloud fa-fw): Kubernetes & Cloud Solutions
 - :(fas fa-chart-line fa-fw): Expertise in Linux Performance
 - :(fas fa-gear fa-fw): Developing in Golang
-
-{{ if not .Params.noComment }}
-Comment
-{{ end }}
