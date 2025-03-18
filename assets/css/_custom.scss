@@ -1,4 +1,19 @@
 // ==============================
 // Custom style
-// 自定义样式
 // ==============================
+
+.single {
+  .content {
+    .social-links {
+      text-align: center;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+
+      a {
+        vertical-align: middle;
+      }
+
+      @include link(true, true);
+    }
+  }
+}

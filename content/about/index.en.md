@@ -6,12 +6,15 @@ description: "About me"
 images: ["/me.png"]
 ---
 
-![Author](/images/me.webp)
+<p align="center">
+  <img src="/images/me.png"/>
+</p>
+{{< social-links >}}
 
-[![GitHub](https://img.shields.io/badge/GitHub-@ealdoshkin-181717?logo=github&style=flat-square)](https://github.com/ealdoshkin)
-[![Matrix](https://img.shields.io/badge/Matrix-Chat-7BC9A4?logo=matrix&style=flat-square)](https://matrix.to/#/@hah3sh:crossbach.de)
-[![Telegram](https://img.shields.io/badge/Telegram-Join-26A5E4?logo=telegram&style=flat-square)](https://t.me/+fANSlR3l18czZDIy)
-[![Email](https://img.shields.io/badge/Email-Click%20to%20send-D14836?logo=gmail&style=flat-square)](mailto:aldoshkineg@gmail.com)
+<!--[![GitHub](https://img.shields.io/badge/GitHub-@ealdoshkin-181717?logo=github&style=flat-square)](https://github.com/ealdoshkin)-->
+<!--[![Matrix](https://img.shields.io/badge/Matrix-Chat-7BC9A4?logo=matrix&style=flat-square)](https://matrix.to/#/@hah3sh:crossbach.de)-->
+<!--[![Telegram](https://img.shields.io/badge/Telegram-Join-26A5E4?logo=telegram&style=flat-square)](https://t.me/+fANSlR3l18czZDIy)-->
+<!--[![Email](https://img.shields.io/badge/Email-Click%20to%20send-D14836?logo=gmail&style=flat-square)](mailto:aldoshkineg@gmail.com)-->
 
 ## Eugene Aldoshkin
 
@@ -22,7 +25,7 @@ images: ["/me.png"]
 - :(fas fa-code fa-fw): 3+ years developing in Golang
 - :(fas fa-brain fa-fw): 2 years integrating Artifact Intelligence
 
-## Cooperation
+## Business cooperation
 
 - :(fas fa-brain fa-fw): Integration with Artificial Intelligence
 - :(fas fa-cloud fa-fw): Kubernetes & Cloud Solutions

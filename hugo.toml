@@ -411,7 +411,7 @@ visitor = true
 recordIP = true
 highlight = true
 enableQQ = false
-serverURLs = "https://valine.hugoloveit.com"
+serverURLs = "https://kx3p0swy.api.lncldglobal.com"
 # emoji data file name, default is "google.yml"
 # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
 # located in "themes/LoveIt/assets/lib/valine/emoji/" directory
