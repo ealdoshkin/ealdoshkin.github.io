@@ -1,12 +1,14 @@
 ---
 title: "Обо мне"
+comment: false
 date: 2025-03-18
 draft: false
 description: "Обо мне"
 images: ["/me.png"]
 ---
 
-![Owner](/images/me.png "Eugene Aldoshkin")
+![Owner](/images/me.png "Евгений Алдошкин")
+{{< social-links >}}
 
 <!--[![GitHub](https://img.shields.io/badge/GitHub-@ealdoshkin-181717?logo=github&style=flat-square)](https://github.com/ealdoshkin)-->
 <!--[![Matrix](https://img.shields.io/badge/Matrix-Chat-7BC9A4?logo=matrix&style=flat-square)](https://matrix.to/#/@hah3sh:crossbach.de)-->
