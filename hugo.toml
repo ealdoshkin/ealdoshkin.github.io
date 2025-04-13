@@ -407,7 +407,7 @@ meta = ""
 pageSize = 10
 # automatically adapt the current theme i18n configuration when empty
 lang = ""
-visitor = true
+visitor = false                                     # TODO: change it
 recordIP = true
 highlight = true
 enableQQ = false
