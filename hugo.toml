@@ -477,7 +477,7 @@ darkTheme = "dark"
 images = []
 # Publisher info
 [params.page.seo.publisher]
-name = "xxxx"
+name = "Ealdoshkin"
 logoUrl = "/images/avatar.png"
 
 # TypeIt config
