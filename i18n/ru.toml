@@ -1,0 +1,5 @@
+# Project-level i18n overrides for the LoveIt theme.
+# The theme reads `valineLang` for both Valine and giscus widget language;
+# its bundled ru translation falls back to "en", so point it to Russian here.
+[valineLang]
+other = "ru"

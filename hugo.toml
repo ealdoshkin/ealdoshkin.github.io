@@ -387,12 +387,10 @@ owner = ""
 repo = ""
 clientId = ""
 clientSecret = ""
-# Valine comment config (https://github.com/xCss/Valine)
+# Valine comment config (https://github.com/xCss/Valine) — disabled:
+# LeanCloud international shuts down on 2027-01-12, migrated to giscus.
 [params.page.comment.valine]
-enable = true
-# appId/appKey are read from the VALINE_APP_ID / VALINE_APP_KEY environment
-# variables at build time (see themes/LoveIt/layouts/partials/comment.html).
-# Keep them out of version control; set the env vars in CI and locally.
+enable = false
 appId = ""
 appKey = ""
 placeholder = ""
@@ -445,11 +443,11 @@ darkTheme = "github-dark"
 # giscus comment config (https://giscus.app/)
 [params.page.comment.giscus]
 # You can refer to the official documentation of giscus to use the following configuration.
-enable = false
-repo = ""
-repoId = ""
+enable = true
+repo = "aldoshkineg/aldoshkineg.github.io"
+repoId = "R_kgDOOFA1Cw"
 category = "Announcements"
-categoryId = ""
+categoryId = "DIC_kwDOOFA1C84DEelw"
 # automatically adapt the current theme i18n configuration when empty
 lang = ""
 mapping = "pathname"
