@@ -8,7 +8,7 @@ description: "Linux memory allocation for Golang"
 images: []
 resources:
   - name: "featured-image"
-    src: "memory-golang.webp"
+    src: "golang-memory.jpeg"
 tags: ["Golang", "Linux"]
 lightgallery: true
 ---

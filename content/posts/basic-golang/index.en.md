@@ -8,7 +8,7 @@ description: "This article contains basic knowledge of golang"
 images: []
 resources:
   - name: "featured-image"
-    src: "golang-basic.webp"
+    src: "golang-basic.jpeg"
 tags: ["Golang"]
 lightgallery: true
 ---

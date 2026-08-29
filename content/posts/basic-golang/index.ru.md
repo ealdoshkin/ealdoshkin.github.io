@@ -8,7 +8,7 @@ description: "Основа языка Golang"
 images: []
 resources:
   - name: "featured-image"
-    src: "golang-basic.webp"
+    src: "golang-basic.jpeg"
 tags: ["Golang"]
 lightgallery: true
 ---

@@ -1,0 +1,12 @@
+A distinctive retro-futuristic infrastructure aesthetic combining brutalist technical environments, low-poly voxel geometry, post-apocalyptic industrial design, and dense terminal-interface visuals.
+The visual language is built around Linux terminal culture: monochrome command-line interfaces, green or amber phosphor glow, shell commands, system logs, ASCII diagrams, monospaced typography, status indicators, warning messages, and raw hacker aesthetics.
+The environments use blocky voxel-like geometry, deliberately simplified structures, cubic landscapes, modular machinery, visible grids, stacked infrastructure, and a handcrafted digital-world feeling.
+The world feels like a decaying post-apocalyptic technological civilization: rusted metal, exposed cables, old industrial equipment, damaged control panels, concrete bunkers, radioactive atmosphere, abandoned servers, survival technology, worn surfaces, and retro-futuristic machinery.
+Cloud-native infrastructure appears as physical architecture: distributed clusters represented as towers, nodes, containers, pods, services, networks, load balancers, persistent volumes, orchestration layers, deployment graphs, and glowing data flows. Kubernetes-inspired topology becomes part of the environment rather than an overlay.
+The overall atmosphere is “infrastructure archaeology”: a civilization survives inside a giant automated system nobody fully understands anymore.
+Color palette: terminal green, phosphor amber, dark olive, oxidized metal, concrete gray, muted beige, radioactive yellow, occasional warning red.
+Lighting: low-key cinematic lighting, CRT glow, volumetric dust and fog, subtle bloom, illuminated monitors and status lights, deep shadows.
+Textures: CRT scanlines, subtle screen noise, pixel artifacts, phosphor glow, terminal grain, weathered metal, rust, concrete, scratched plastic, low-resolution digital imperfections.
+Composition: technical diagrams merged with cinematic scenes, strong geometric structure, modular repetition, asymmetry, visible infrastructure layers, dense technical detail surrounded by darkness.
+Mood: nostalgic, technical, lonely, resilient, mysterious, post-digital, retro-futuristic, slightly absurd, built by engineers after the apocalypse.
+Do not copy any specific game, franchise, character, logo, UI, or copyrighted visual asset. The result must feel original and use only the abstract aesthetic principles described above.
