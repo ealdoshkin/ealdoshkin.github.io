@@ -4,7 +4,7 @@ title: "Golang: как Linux размещает данные"
 date: 2025-09-19
 lastmod: 2025-09-19
 draft: false
-description: "Linux memory allocation for Golang"
+description: "Как Linux размещает данные программы в памяти: эмпирический разбор для Golang"
 images: []
 resources:
   - name: "featured-image"
