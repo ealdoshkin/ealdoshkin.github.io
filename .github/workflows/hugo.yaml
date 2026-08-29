@@ -32,7 +32,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.144.2
+      HUGO_VERSION: 0.165.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -55,6 +55,8 @@ jobs:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
           TZ: America/Los_Angeles
+          VALINE_APP_ID: ${{ secrets.VALINE_APP_ID }}
+          VALINE_APP_KEY: ${{ secrets.VALINE_APP_KEY }}
         run: |
           hugo \
             --gc \

@@ -3,7 +3,6 @@ theme = "LoveIt"
 # themesDir = "../.."
 title = "Vyrn"
 defaultContentLanguage = "en"
-languageCode = "ru"
 languageName = "Russian"
 
 # whether to include Chinese/Japanese/Korean
@@ -59,7 +58,7 @@ defaultTheme = "auto"
 # gitRepo = "https://github.com/dillonzq/LoveIt"
 # which hash function used for SRI, when empty, no SRI is used
 # ["sha256", "sha384", "sha512", "md5"]
-fingerprint = ""
+fingerprint = "sha512"
 # date format
 dateFormat = "2006-01-02"
 # website title for Open Graph and Twitter Cards
@@ -391,8 +390,11 @@ clientSecret = ""
 # Valine comment config (https://github.com/xCss/Valine)
 [params.page.comment.valine]
 enable = true
-appId = "kx3p0SWYxgbXKCe5qRoAGAr1-MdYXbMMI"
-appKey = "QrIti3fghg6Mo5TzekdIENCA"
+# appId/appKey are read from the VALINE_APP_ID / VALINE_APP_KEY environment
+# variables at build time (see themes/LoveIt/layouts/partials/comment.html).
+# Keep them out of version control; set the env vars in CI and locally.
+appId = ""
+appKey = ""
 placeholder = ""
 avatar = "mp"
 meta = ""
@@ -400,7 +402,7 @@ pageSize = 10
 # automatically adapt the current theme i18n configuration when empty
 lang = ""
 visitor = false                                     # TODO: change it
-recordIP = true
+recordIP = false
 highlight = true
 enableQQ = false
 serverURLs = "https://kx3p0swy.api.lncldglobal.com"
@@ -597,6 +599,11 @@ posts = ":filename"
 [privacy.youtube]
 # ...
 
+# Allow Valine credentials to be read from environment variables
+# (see themes/LoveIt/layouts/partials/comment.html)
+[security.funcs]
+getenv = ["VALINE_APP_ID", "VALINE_APP_KEY"]
+
 # Options to make output .md files
 [mediaTypes]
 [mediaTypes."text/plain"]
@@ -619,8 +626,8 @@ taxonomy = ["HTML", "RSS"]
 [languages]
 [languages.en]
 weight = 1
-languageCode = "en"
-languageName = "English"
+locale = "en"
+label = "English"
 hasCJKLanguage = false
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 [languages.en.menu]
@@ -678,8 +685,8 @@ disclaimer = ""
 
 [languages.ru]
 weight = 2
-languageCode = "ru-RU"
-languageName = "Русский"
+locale = "ru-RU"
+label = "Русский"
 hasCJKLanguage = true
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
 [languages.ru.menu]
