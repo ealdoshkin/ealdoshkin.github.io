@@ -66,6 +66,10 @@ resources:
 
 Коммитить правки в `themes/LoveIt` избегаем — всё через override-ы; исключение (патчи темы) исторически минимально.
 
+## Зависимости
+
+Все сторонние библиотеки (lunr, lazysizes, fontawesome, clipboard и др.) раздаются **с самого сайта** — из вендоренных копий `themes/LoveIt/assets/lib/`, без внешних CDN. Управляется через `assets/data/cdn/local.yml` (пустые значения → локальные пути) + `hugo.toml [params.cdn] data = "local.yml"`. На каждый ассет вешается SRI-фингерпринт (`fingerprint = "sha512"`).
+
 ## Комментарии
 
 [giscus](https://giscus.app) — комментарии через GitHub Discussions этого репозитория (категория *Announcements*). Конфиг — `hugo.toml [params.page.comment.giscus]`. Valine/LeanCloud отключены (LeanCloud international закрывается 12.01.2027).

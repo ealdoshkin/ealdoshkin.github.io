@@ -534,12 +534,9 @@ link = ""
 
 # CDN config for third-party library files
 [params.cdn]
-# CDN data file name, disabled by default
-# ["jsdelivr.yml"]
-# located in "themes/LoveIt/assets/data/cdn/" directory
-# you can store your own data files in the same path under your project:
-# "assets/data/cdn/"
-data = "jsdelivr.yml"
+# Self-hosted libraries: local.yml keeps every value empty, so the theme
+# bundles the vendored copies from themes/LoveIt/assets/lib/ (with SRI).
+data = "local.yml"
 
 # Compatibility config
 [params.compatibility]
