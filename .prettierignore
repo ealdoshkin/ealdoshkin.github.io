@@ -1,0 +1,12 @@
+# Generated output
+/public/
+/resources/
+
+# Vendored theme (do not touch)
+/themes/
+
+# Hugo Go templates — prettier's HTML parser mangles {{ }} / {{- -}} blocks
+/layouts/
+
+# Tooling artifacts
+node_modules/

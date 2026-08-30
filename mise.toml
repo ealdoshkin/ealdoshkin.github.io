@@ -1,0 +1,25 @@
+# Project toolchain via mise (https://mise.jdx.dev)
+#   mise install      # provision prettier, lighthouse, pre-commit
+#   mise x -- <tool>  # run a tool inside this project's env
+#   mise run <task>   # run a task (build/serve/fmt/check)
+
+[tools]
+"npm:prettier" = "3"
+"npm:lighthouse" = "13"
+"pipx:pre-commit" = "latest"
+
+[env]
+# Chrome used by Lighthouse. Point at your local binary if different.
+CHROME_PATH = "/usr/bin/chromium-bin"
+
+[tasks.build]
+run = "hugo --gc --minify"
+
+[tasks.serve]
+run = "hugo server -D"
+
+[tasks.fmt]
+run = "prettier --write ."
+
+[tasks.check]
+run = "prettier --check . && hugo --gc --minify"

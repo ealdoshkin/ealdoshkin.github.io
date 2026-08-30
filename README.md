@@ -54,15 +54,15 @@ resources:
 
 ## Project-override-ы (поверх темы)
 
-| Файл | Зачем |
-|---|---|
-| `layouts/partials/plugin/img.html` | Hugo Pipes: webp-srcset, width/height, alt из Title |
-| `layouts/partials/head/link.html` | hreflang en/ru/x-default |
-| `layouts/robots.txt` | свой robots.txt (Allow: /) |
-| `layouts/_default/term.html` | рендер страниц тегов (в теме отсутствовал) |
+| Файл                                             | Зачем                                                                 |
+| ------------------------------------------------ | --------------------------------------------------------------------- |
+| `layouts/partials/plugin/img.html`               | Hugo Pipes: webp-srcset, width/height, alt из Title                   |
+| `layouts/partials/head/link.html`                | hreflang en/ru/x-default                                              |
+| `layouts/robots.txt`                             | свой robots.txt (Allow: /)                                            |
+| `layouts/_default/term.html`                     | рендер страниц тегов (в теме отсутствовал)                            |
 | `layouts/shortcodes/{x,x_simple,instagram}.html` | замена удалённых internal-шорткодов Hugo (твит/инстаграм-встраивания) |
-| `layouts/partials/internal/{x,x_simple}.html` | то же, для внутреннего шорткода |
-| `i18n/ru.toml` | русский язык для виджетов (тема фолбэчится на en) |
+| `layouts/partials/internal/{x,x_simple}.html`    | то же, для внутреннего шорткода                                       |
+| `i18n/ru.toml`                                   | русский язык для виджетов (тема фолбэчится на en)                     |
 
 Коммитить правки в `themes/LoveIt` избегаем — всё через override-ы; исключение (патчи темы) исторически минимально.
 
@@ -72,7 +72,7 @@ resources:
 
 ## Комментарии
 
-[giscus](https://giscus.app) — комментарии через GitHub Discussions этого репозитория (категория *Announcements*). Конфиг — `hugo.toml [params.page.comment.giscus]`. Valine/LeanCloud отключены (LeanCloud international закрывается 12.01.2027).
+[giscus](https://giscus.app) — комментарии через GitHub Discussions этого репозитория (категория _Announcements_). Конфиг — `hugo.toml [params.page.comment.giscus]`. Valine/LeanCloud отключены (LeanCloud international закрывается 12.01.2027).
 
 ## Поиск
 
@@ -84,9 +84,8 @@ resources:
 
 Когда понадобится реальная статистика — выбранный вариант: **Cloudflare Web Analytics**:
 
-1. dash.cloudflare.com → Web Analytics → *Add a site* → `vyrn.ru`
+1. dash.cloudflare.com → Web Analytics → _Add a site_ → `vyrn.ru`
 2. Полученный сниппет (`beacon.min.js` + `data-cf-beacon` с токеном) добавить в шаблон через project-override партиала `<head>` (по аналогии с `layouts/partials/head/link.html`)
 3. Деплой — данные появятся в дашборде через несколько минут
 
 Бесплатно, без cookies (не требует согласий), невидимый бикон. Минус: часть пользователей с адблоками не считается. Альтернатива — [GoatCounter](https://www.goatcounter.com) (бесплатно для некоммерческих, отдельный аккаунт). Google Analytics сознательно не используется.
-
