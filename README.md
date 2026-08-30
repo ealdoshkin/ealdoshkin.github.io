@@ -78,6 +78,27 @@ resources:
 
 Клиентский Lunr.js: индекс `/index.json` (и `/ru/index.json`) генерируется при сборке, поиск выполняется в браузере, включая русский стемминг. Внешних сервисов нет.
 
+## Производительность (Lighthouse)
+
+Замеряется мобильным профилем (`make measure` → Lighthouse 13, эмуляция 4G + throttling CPU). Актуальные значения после деплоя:
+
+| Категория      | Главная | Пост    |
+| -------------- | ------- | ------- |
+| Performance    | **94**  | **92**  |
+| Accessibility  | 93      | 85      |
+| Best Practices | **100** | **100** |
+| SEO            | 85      | 92      |
+
+Ключевые метрики: LCP 2.8с (главная) / 1.8с (пост), FCP 1.1с / 1.4с, TBT 20мс / 320мс, CLS 0.046 / 0.001.
+
+Что дало результат:
+
+- Адаптивные webp + `width/height` → CLS ≈ 0 (нет layout shift).
+- Featured-картинка поста грузится eagerly с `fetchpriority="high"` (LCP-фикс, см. `layouts/partials/plugin/img.html` + `layouts/posts/single.html`).
+- Полностью self-hosted ассеты + SRI + минификация + gzip.
+
+Остаток Performance — платформа/тема, не наша конфигурация: TBT от JS темы LoveIt, `font-display` у FontAwesome, `max-age: 600` (жёстко зашит в GitHub Pages). Абсолютные цифры Lighthouse на посте плавают от прогона к прогону (±TBT из-за throttle), полевые метрики (LCP/FCP/CLS) стабильно в зелёной зоне.
+
 ## Аналитика (не подключена, план)
 
 Счётчик на сайте отсутствует. Грубый индикатор «домен дышит» — Cloudflare DNS Analytics (Analytics & Logs → DNS в дашборде Cloudflare): показывает число DNS-запросов к зоне, но это не визиты (резолверы кэшируют, боты шумят).
