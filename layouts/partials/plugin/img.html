@@ -62,25 +62,37 @@
 
 {{- $alt := .Alt | default .Title | default $src -}}
 {{- $loading := resources.Get "svg/loading.svg" | minify -}}
+{{- /* Eager: render the real image immediately (no lazysizes) and hint LCP */ -}}
+{{- $eager := .Eager -}}
+{{- $imgClass := "lazyload" -}}
+{{- $imgSrc := $loading.RelPermalink -}}
+{{- $imgSrcset := $srcset -}}
+{{- if $eager -}}
+    {{- $imgClass = "" -}}
+    {{- $imgSrc = $src -}}
+    {{- if not $imgSrcset -}}{{- $imgSrcset = "" -}}{{- end -}}
+{{- else -}}
+    {{- if not $imgSrcset -}}{{- $imgSrcset = printf "%v 1.5x, %v 2x" $small $large -}}{{- end -}}
+{{- end -}}
 {{- if .Linked -}}
     <a class="lightgallery" href="{{ $large | safeURL }}" title="{{ .Title | default $alt }}" data-thumbnail="{{ $small | safeURL }}"{{ with .Caption }} data-sub-html="<h2>{{ . }}</h2>{{ with $.Title }}<p>{{ . }}</p>{{ end }}"{{ end }}{{ with .Rel }} rel="{{ . }}"{{ end }}>
         <img
-            class="lazyload{{ with .Class }} {{ . }}{{ end }}"
-            src="{{ $loading.RelPermalink }}"
-            data-src="{{ $src | safeURL }}"
-            data-srcset="{{ with $srcset }}{{ . | safeHTMLAttr }}{{ else }}{{ $small | safeURL }}, {{ $src | safeURL }} 1.5x, {{ $large | safeURL }} 2x{{ end }}"
-            data-sizes="auto"
+            class="{{ $imgClass }}{{ with .Class }} {{ . }}{{ end }}"
+            src="{{ $imgSrc | safeURL }}"
+            {{- if not $eager }} data-src="{{ $src | safeURL }}" data-sizes="auto"{{- end }}
+            {{- if $imgSrcset }} {{ if $eager }}srcset="{{ $imgSrcset | safeHTMLAttr }}"{{ else }}data-srcset="{{ $imgSrcset | safeHTMLAttr }}"{{ end }}{{ end }}
+            {{- if $eager }} fetchpriority="high"{{ end }}
             alt="{{ $alt }}"
             {{- with $width }} width="{{ . }}"{{ end }}
             {{- with $height }} height="{{ . }}"{{ end }} />
     </a>
 {{- else -}}
     <img
-        class="lazyload{{ with .Class }} {{ . }}{{ end }}"
-        src="{{ $loading.RelPermalink }}"
-        data-src="{{ $src | safeURL }}"
-        data-srcset="{{ with $srcset }}{{ . | safeHTMLAttr }}{{ else }}{{ $small | safeURL }}, {{ $src | safeURL }} 1.5x, {{ $large | safeURL }} 2x{{ end }}"
-        data-sizes="auto"
+        class="{{ $imgClass }}{{ with .Class }} {{ . }}{{ end }}"
+        src="{{ $imgSrc | safeURL }}"
+        {{- if not $eager }} data-src="{{ $src | safeURL }}" data-sizes="auto"{{- end }}
+        {{- if $imgSrcset }} {{ if $eager }}srcset="{{ $imgSrcset | safeHTMLAttr }}"{{ else }}data-srcset="{{ $imgSrcset | safeHTMLAttr }}"{{ end }}{{ end }}
+        {{- if $eager }} fetchpriority="high"{{ end }}
         alt="{{ $alt }}"
         title="{{ .Title | default $alt }}"
         {{- with $width }} width="{{ . }}"{{ end }}
